@@ -12,7 +12,7 @@ for font in sorted(data):
         sys.stdout.write(sep + json.dumps(glyph) + ": ")
         
         values = [data[font][glyph][key] for key in
-            ['depth', 'height', 'italic', 'skew']]
+            ['depth', 'height', 'italic', 'skew', 'width']]
             
         values = [value if value != 0.0 else 0 for value in values]
             
